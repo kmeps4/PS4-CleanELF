@@ -22,4 +22,4 @@ This is not system version specific, so it will work on 3.00 to 4.51
 # Credits
 - Sabotage: how to do x64 detours
 - 2much4u/xemio: makefile/building examples
-- Sistro: PS5 port
+- PS5 Port by SiSTR0: https://github.com/SiSTR0
