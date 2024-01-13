@@ -1,6 +1,6 @@
-# Playstation 4 Cleaned ELF
-This is a source for building ELF files on the PS4<br>
-This is not system version specific, so it will work on 4.05, 4.55, 5.05 etc
+# Playstation 5 Cleaned ELF [Port]
+This is a source for building ELF files on the PS5<br>
+This is not system version specific, so it will work on 3.00 to 4.51
 
 # Includes
 - C++ Compiler
@@ -22,3 +22,4 @@ This is not system version specific, so it will work on 4.05, 4.55, 5.05 etc
 # Credits
 - Sabotage: how to do x64 detours
 - 2much4u/xemio: makefile/building examples
+- Sistro: PS5 port
