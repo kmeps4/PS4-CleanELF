@@ -1,5 +1,7 @@
 #include "../include/imports.h"
 
+void* ptr_syscall;
+
 unsigned int(*sceKernelSleep)(unsigned int seconds);
 int(*sceKernelUsleep)(unsigned int microseconds);
 
@@ -64,6 +66,10 @@ int sys_dynlib_dlsym(int loadedModuleID, const char *name, void *destination) {
 
 int sys_dynlib_load_prx(const char *name, int *idDestination) {
 	return syscall(594, name, 0, idDestination, 0);
+}
+
+void initSyscall(uint64_t getpid) {
+    ptr_syscall = (void *)(getpid + 0x0A);
 }
 
 void initImports() {

@@ -123,6 +123,7 @@ void* sys_munmap(void *addr, size_t len);
 int sys_dynlib_dlsym(int loadedModuleID, const char *name, void *destination);
 int sys_dynlib_load_prx(const char *name, int *idDestination);
 
+void initSyscall(uint64_t getpid);
 void initImports();
 
 inline void* operator new(size_t size) { return malloc(size); }
